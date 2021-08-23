@@ -1,9 +1,60 @@
 body {
-	font-family: "Courier New";
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	margin: 0em;
+	padding: 0px;
+}
+h1, h2, h3 {
+	font-family: 'Times New Roman';
+}
+
+.bright-text {
+	color: white;
+}
+
+.top-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	height: 25em;
+}
+.first-box {
+	background-color: #CBDDEA;
+	grid-row: 1 / span 2;
+	position: relative;
+	padding: 1em 5em;
+}
+.first-box button {
+	border: none;
+	/* TODO: box-shadow */
+	border-radius: 2em;
+	padding: 1em 4em;
+	font-weight: bold;
+	background-color: white;
+}
+.first-box img {
+	width: 11em;
+	position: absolute;
+	right: 0em;
+	bottom: 0em;
 }
 
 .second-box {
+	background-color: #f17949;
 	font-family: "Arial";
+}
+.third-box {
+	background-color: #fab131;
+}
+.second-box, .third-box {
+	text-align: center;
+	padding-top: 3em;
+}
+.second-box h2 a, .third-box h2 a {
+	color: white;
+	text-decoration: none;
+}
+.second-box h2 a:hover, .third-box h2 a:hover {
+	text-decoration: underline;
 }
 
 /* .third-box h2 {
